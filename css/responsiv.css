@@ -1,0 +1,138 @@
+/* Responsive CSS for all devices */
+
+/* General responsive rules */
+* {
+    box-sizing: border-box;
+}
+
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mobile devices (up to 768px) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .menu a {
+        padding: 10px 12px;
+    }
+
+    .dropdown-menu {
+        position: static;
+        display: none;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: none;
+        box-shadow: none;
+        min-width: auto;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu li {
+        display: block;
+    }
+
+    .dropdown-menu li a {
+        color: white;
+        padding: 8px 12px;
+    }
+
+    #destinations {
+        padding: 40px 10px;
+    }
+
+    #destinations h2 {
+        font-size: 1.5em;
+    }
+
+    #destinations p {
+        font-size: 1em;
+    }
+
+    #destinations button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    #tips {
+        flex-direction: column;
+        padding: 40px 10px;
+        text-align: center;
+    }
+
+    #tips h2 {
+        font-size: 1.5em;
+    }
+
+    #tips ul {
+        font-size: 1em;
+        text-align: left;
+        margin: 0 auto;
+        max-width: 300px;
+    }
+
+    #tips iframe {
+        width: 100%;
+        height: 250px;
+        margin-top: 20px;
+    }
+
+    #about {
+        padding: 40px 10px;
+    }
+
+    #about h2 {
+        font-size: 1.5em;
+    }
+
+    #about p {
+        font-size: 1em;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+/* Tablet devices (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    header {
+        padding: 20px 20px;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+    #destinations {
+        padding: 50px 15px;
+    }
+
+    #tips {
+        padding: 50px 15px;
+    }
+
+    #tips iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    #about {
+        padding: 50px 15px;
+    }
+}
+
+/* Large screens (above 1024px) - already handled in index.css */
